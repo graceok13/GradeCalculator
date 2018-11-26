@@ -1,0 +1,44 @@
+body{
+    background-color: lightcyan;
+    font-family: "American Typewriter";
+}
+
+#inputValidation, #inputValidationTwo{
+    color: red;
+}
+
+#currentGrade, #finalGradeNeeded{
+    font-size: 50px;
+}
+
+
+.green{
+    background-color: green;
+}
+
+.lightGreen{
+    background-color: lightgreen;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color: red;
+}
+
+#container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border: 1px black solid;
+}
+
+#finalTable,#theTable {
+    margin:auto;
+}

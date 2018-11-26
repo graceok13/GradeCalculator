@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="setUpPage()">
+<div id="container">
+    <h1>Grade Calculator</h1>
+
+    <table id="gradeTable"></table>
+    <input type="text" id="newCat"/>
+    <button onclick="addRow()" class="btn btn-default">Add Category</button>
+    <br><br>
+    <button onclick="calculateCurrentGrade()" class="btn btn-default">Calculate Current Grade</button>
+    <div id="inputValidation"></div>
+    <h3>Current Grade: </h3>
+    <div id="currentGrade"></div>
+
+    <table id="finalTable">
+        <tr>
+            <td>
+                <div>Grade Desired:</div>
+            </td>
+            <td>
+                <input type="text" id="gradeDesired"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Final Weight:</div>
+            </td>
+            <td>
+                <input type="text" id="finalWeight"/>
+            </td>
+        </tr>
+    </table>
+    <button onclick="calculateGradeNeeded()" class="btn btn-default">Calculate Final Grade Needed</button>
+    <div id="inputValidationTwo"></div>
+    <h3>Final Grade Needed: </h3>
+    <div id="finalGradeNeeded"></div>
+</div>
+</body>
+</html>
